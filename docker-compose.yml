@@ -1,7 +1,7 @@
 services:
   frontend:
     build:
-      context: https://github.com/lsprz2773/igdb-api-frontend.git#main
+      context: .
       dockerfile: Dockerfile
     container_name: igdb-frontend
     ports:
