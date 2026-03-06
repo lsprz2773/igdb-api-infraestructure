@@ -1,0 +1,39 @@
+# IGDB App — Infraestructura
+
+Repositorio de infraestructura para el proyecto IGDB Frontend.
+Levanta la aplicación usando Docker sin necesidad de clonar el código fuente.
+
+## Repositorios relacionados
+- Frontend: https://github.com/lsprz2773/igdb-api-frontend.git
+
+## Requisitos
+- Docker Desktop instalado y corriendo
+- Credenciales de IGDB (gratuitas en https://dev.twitch.tv/)
+
+## Instalación
+
+1. Clonar este repositorio:
+   git clone https://github.com/tu-usuario/igdb-infra.git
+   cd igdb-infra
+
+2. Crear archivo de variables de entorno:
+   cp .env.example .env.local
+
+3. Editar .env.local con tus credenciales reales:
+   IGDB_CLIENT_ID=tu_client_id_aqui
+   IGDB_CLIENT_SECRET=tu_client_secret_aqui
+   NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
+4. Levantar la aplicación:
+   docker compose up
+
+5. Abrir en el browser:
+   http://localhost:3000
+
+## Comandos útiles
+
+docker compose up           # Levantar
+docker compose up -d        # Levantar en background
+docker compose down         # Detener
+docker compose logs -f      # Ver logs en tiempo real
+docker compose build        # Reconstruir imagen
