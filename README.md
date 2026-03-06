@@ -27,7 +27,7 @@ Levanta la aplicación usando Docker sin necesidad de clonar el código fuente.
 ```bash
    IGDB_CLIENT_ID=tu_client_id_aqui
    IGDB_CLIENT_SECRET=tu_client_secret_aqui
-   NEXT_PUBLIC_BASE_URL=http://localhost:3000
+   NEXT_PUBLIC_BASE_URL=http://frontend:3000
 ```
 
 4. Levantar la aplicación:
