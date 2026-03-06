@@ -25,15 +25,8 @@ Levanta la aplicación usando Docker sin necesidad de clonar el código fuente.
    NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
 4. Levantar la aplicación:
-   docker compose up
+   docker compose build --no-cache
+   docker compose up -d
 
-5. Abrir en el browser:
+5. Abrir en el navegador:
    http://localhost:3000
-
-## Comandos útiles
-
-docker compose up           # Levantar
-docker compose up -d        # Levantar en background
-docker compose down         # Detener
-docker compose logs -f      # Ver logs en tiempo real
-docker compose build        # Reconstruir imagen
